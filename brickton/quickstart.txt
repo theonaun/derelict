@@ -1,0 +1,16 @@
+1. Move brickton.py file to your home directory.
+2. Run the file with your Python interpreter e.g. "python /home/user/brickton.v.0.5.0.py"
+3. Generate keys on your machine using the "discrete" or "continuous" options.
+4. Open your automatically created /home/user/.brickton folder (folder is hidden).
+5. Have other user place the keys you shared with them in their /home/user/.brickton folder.
+    # Note that 2 numeric ultralong keys (NUKs) are required for interactive chat/transfer.
+6. For chat: listen for connection and have the other party connect (or vice versa); enter text.
+7. For file transfer: listen for connect and have the other party connect (or vice versa); click file transfer. 
+8. For offline file translation: click the offline button and then follow then pick the appropriate file.
+
+Please report any bugs/issues to brickton.project@gmail.com or to Github. Any feedback is greatly appreciated.
+
+Points:
+The keys stored in the brickton folder are .txt files containing 10,000 random numbers bewteen 0 and 127.
+OSX terminal command to show hidden files: defaults write com.apple.Finder AppleShowAllFiles YES; killall -HUP Finder
+/dev/random is blocking (very slow)
