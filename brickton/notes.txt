@@ -1,0 +1,126 @@
+Codec ...
+
+
+TEXT to bytes
+HASH BYTES
+get length hash + text
+compose key
+compose key descripter string
+
+XOR ^
+
+text_bytes XOR mask_bytes = ciphertext
+ciphertext XOR mask_bytes = text_bytes
+ 
+
+
+
+
+===
+structure
+===
+/gui
+connector
+
+/utilities
+keyman
+codec
+socket
+
+/logic
+chat
+file
+keygen
+connection
+
+===
+processes
+===
+***COMMUNICATE***
+Upload File button
+Send Message button
+Listen button
+Connect button
+
+role
+uuid local
+uuid foreig
+current key
+remaining key
+ip address
+port
+chat window
+input window
+console
+
+***KEYS***
+sortby sender
+sortby receiever
+generate keys
+
+display sender
+display receiever
+display remaining
+display date
+sort sender
+sort receiever
+progres bar
+console
+sender
+receieiver
+num keys
+random source
+
+***OFFLINE***
+select file encode
+decode
+select file encode
+encode
+select sender
+select recipient
+decode_callback
+encode_callback
+
+select file decodei button
+file decodde line
+decode button
+sender label
+sender combo
+recipient label
+recipient combo
+file to encode bytton
+file encode line
+encore button
+encode line
+console
+
+
+
+
+
+
+
+
+
+
+
+send file
+    file dialog.
+    string goes in text line
+    send request
+    if yes encode file and send
+    if
+
+send file
+    file data to bytes
+    assemble keys
+    encode
+    send data
+
+
+send message
+generate
+listen
+connect
+offline encode
+offline decode

@@ -1,0 +1,2 @@
+class BricktonError(Exception):
+    pass

@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1230</width>
+    <height>912</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>667</width>
+    <height>702</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Brickton</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="brickton.qrc">
+    <normaloff>:/data/brickton_logo.jpg</normaloff>:/data/brickton_logo.jpg</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <widget class="QTabWidget" name="tab_bar">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="c_tab">
+         <attribute name="title">
+          <string>Communicate</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QTextBrowser" name="c_chat_output">
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="3">
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="1">
+               <widget class="QPushButton" name="c_send_button">
+                <property name="text">
+                 <string>Send Message</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QPushButton" name="c_upload_button">
+                <property name="text">
+                 <string>Upload File</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0" rowspan="2">
+               <widget class="QTextEdit" name="c_chat_input"/>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0" colspan="3">
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="2">
+             <layout class="QFormLayout" name="formLayout">
+              <property name="fieldGrowthPolicy">
+               <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+              </property>
+              <item row="0" column="0">
+               <widget class="QLabel" name="c_role_label_2">
+                <property name="text">
+                 <string>Role</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="c_role_line">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="c_local_label">
+                <property name="text">
+                 <string>Local ID</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="c_foreign_label">
+                <property name="text">
+                 <string>Foreign ID</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="c_current_label">
+                <property name="text">
+                 <string>Current Key</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="c_current_line">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="c_remaining_label">
+                <property name="text">
+                 <string>Remaining</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLineEdit" name="c_remaining_line">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="c_ip_label">
+                <property name="text">
+                 <string>IP Address</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QLineEdit" name="c_ip_line"/>
+              </item>
+              <item row="7" column="1">
+               <widget class="QPushButton" name="c_connect_button">
+                <property name="text">
+                 <string>Connect</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="1">
+               <widget class="QPushButton" name="c_listen_button">
+                <property name="text">
+                 <string>Listen</string>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="0" colspan="2">
+               <widget class="QTextBrowser" name="c_console"/>
+              </item>
+              <item row="6" column="1">
+               <widget class="QLineEdit" name="c_port_line"/>
+              </item>
+              <item row="6" column="0">
+               <widget class="QLabel" name="c_port_label">
+                <property name="text">
+                 <string>Port</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QComboBox" name="c_local_combo"/>
+              </item>
+              <item row="2" column="1">
+               <widget class="QComboBox" name="c_foreign_combo"/>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="1">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="k_tab">
+         <attribute name="title">
+          <string>Keys</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <layout class="QFormLayout" name="k_sortby_label">
+              <property name="fieldGrowthPolicy">
+               <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+              </property>
+              <item row="1" column="0">
+               <widget class="QLabel" name="k_listsender_label">
+                <property name="text">
+                 <string>Sender</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="k_listsender_line">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="k_listreceived_label">
+                <property name="text">
+                 <string>Receiver</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="k_listreceiver_line">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="k_listremaining_label">
+                <property name="text">
+                 <string>Remaining</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="k_listremaining_line">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="1">
+               <widget class="QComboBox" name="k_sender_combo"/>
+              </item>
+              <item row="8" column="1">
+               <widget class="QComboBox" name="k_receiver_combo"/>
+              </item>
+              <item row="5" column="1">
+               <spacer name="horizontalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="7" column="0">
+               <widget class="QLabel" name="k_sender_label">
+                <property name="text">
+                 <string>Sender</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="0">
+               <widget class="QLabel" name="k_receiver_label">
+                <property name="text">
+                 <string>Receiver</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="1">
+               <widget class="QLabel" name="k_sortby_label_2">
+                <property name="text">
+                 <string>Sort By</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLineEdit" name="k_timestamp_line">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="k_datestamp_label">
+                <property name="text">
+                 <string>Created</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="0">
+               <widget class="QLabel" name="k_party1_label">
+                <property name="text">
+                 <string>Party 1</string>
+                </property>
+               </widget>
+              </item>
+              <item row="12" column="0">
+               <widget class="QLabel" name="k_party2_label">
+                <property name="text">
+                 <string>Party 2</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="1">
+               <widget class="QComboBox" name="k_export1_combo"/>
+              </item>
+              <item row="12" column="1">
+               <widget class="QComboBox" name="k_export2_combo"/>
+              </item>
+              <item row="9" column="1">
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="10" column="1">
+               <widget class="QLabel" name="k_export_label">
+                <property name="text">
+                 <string>Export</string>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="1">
+               <widget class="QPushButton" name="k_import_button">
+                <property name="text">
+                 <string>Import</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="k_keyinfo_label">
+                <property name="text">
+                 <string>Key Info</string>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="1">
+               <widget class="QPushButton" name="k_export_button">
+                <property name="text">
+                 <string>Export</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="1">
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="QLabel" name="k_browser_label">
+                <property name="text">
+                 <string>Key Browser</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QListWidget" name="k_listkey_list"/>
+              </item>
+              <item>
+               <widget class="QLabel" name="k_console_label">
+                <property name="text">
+                 <string>Console</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="k_console_textedit">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0">
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="3" column="1">
+               <widget class="QPushButton" name="k_generate_button">
+                <property name="text">
+                 <string>Generate</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="k_genparty1_label">
+                <property name="text">
+                 <string>Party 1    </string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3">
+               <widget class="QComboBox" name="k_random_combo"/>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="k_genparty1_line"/>
+              </item>
+              <item row="1" column="2">
+               <widget class="QLabel" name="k_genparty2_label">
+                <property name="text">
+                 <string>Party 2    </string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="QLineEdit" name="k_genparty2_line"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="k_gennum_label">
+                <property name="text">
+                 <string># of pairs</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QPushButton" name="k_cancel_button">
+                <property name="text">
+                 <string>Cancel</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="QLabel" name="k_gensource_label">
+                <property name="text">
+                 <string>Source</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="k_generate_label">
+                <property name="text">
+                 <string>Generate</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QSpinBox" name="k_gennum_spinbox"/>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="1">
+             <widget class="QProgressBar" name="k_genprogress_bar">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="value">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="o_tab">
+         <attribute name="title">
+          <string>Offline</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="4" column="1">
+           <widget class="QComboBox" name="o_sender_combo"/>
+          </item>
+          <item row="13" column="1">
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLineEdit" name="o_selectencode_line"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="o_decode_button">
+            <property name="text">
+             <string>Decode</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="QPushButton" name="o_encode_button">
+            <property name="text">
+             <string>Encode</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="o_selectdecode_button">
+            <property name="text">
+             <string>Select File To Decode</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0" alignment="Qt::AlignLeft">
+           <widget class="QLabel" name="o_sender_label">
+            <property name="text">
+             <string>Sender</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="o_selectdecode_line"/>
+          </item>
+          <item row="8" column="1">
+           <widget class="QLineEdit" name="o_encode_line">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QPushButton" name="o_selectencode_button">
+            <property name="text">
+             <string>Select File To Encode</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" rowspan="9">
+           <widget class="QTextBrowser" name="o_console_text"/>
+          </item>
+          <item row="5" column="1">
+           <widget class="QComboBox" name="o_recipient_combo"/>
+          </item>
+          <item row="5" column="0" alignment="Qt::AlignLeft">
+           <widget class="QLabel" name="o_recipient_label">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Recipient&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="brickton_icon_label">
+      <property name="minimumSize">
+       <size>
+        <width>111</width>
+        <height>51</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>111</width>
+        <height>51</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="brickton.qrc">:/data/brickton_logo.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1230</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionApplication">
+   <property name="text">
+    <string>Application</string>
+   </property>
+  </action>
+  <action name="actionDfd">
+   <property name="text">
+    <string>dfd\</string>
+   </property>
+  </action>
+  <action name="actionAsdf">
+   <property name="text">
+    <string>asdf</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="brickton.qrc"/>
+ </resources>
+ <connections/>
+</ui>
